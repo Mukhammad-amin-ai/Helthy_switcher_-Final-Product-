@@ -16,7 +16,7 @@
   height: 125%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/img/placeholder.png);
+  background-image: url(/./img/placeholder.png);
   position: relative;
 }
 .container .head .navbar {
@@ -1073,7 +1073,7 @@
   color: #b3b3b3;
 }
 .container .recipe .rec_bot .rr_right .lorem:nth-child(2) {
-  background-image: url(/img/image\ rec.png);
+  background-image: url(./img/image\ rec.png);
 }
 .container .social {
   width: 100%;
