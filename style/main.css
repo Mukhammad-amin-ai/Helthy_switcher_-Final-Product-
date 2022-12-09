@@ -1,0 +1,1361 @@
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-9");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+.container .head {
+  width: 100%;
+  height: 125%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/img/placeholder.png);
+  position: relative;
+}
+.container .head .navbar {
+  width: 100%;
+  height: 91px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  gap: 165px;
+  position: relative;
+}
+.container .head .navbar .left {
+  width: 200px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.container .head .navbar .left h2 {
+  font-size: 16px;
+  padding-top: 10px;
+  color: #34c759;
+}
+.container .head .navbar .burger {
+  display: none;
+  width: 600px;
+  height: 1200px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 10px;
+  font-size: 30px;
+}
+.container .head .navbar .burger .flexx {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 550px;
+  gap: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .head .navbar .burger .flexx .bleft {
+  width: 300px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.container .head .navbar .burger .flexx .bleft h2 {
+  font-size: 16px;
+  padding-top: 10px;
+  color: #34c759;
+}
+.container .head .navbar .burger .flexx .bx .right_hidden {
+  display: none;
+  width: 600px;
+  height: 601px;
+  background-color: #252525;
+  position: absolute;
+  right: 50px;
+  top: 5px;
+  /* left:0;*/
+  z-index: 2;
+  border-radius: 10px;
+}
+.container .head .navbar .burger .flexx .bx .right_hidden .around {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  z-index: 1;
+  left: 50px;
+  bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container .head .navbar .burger .flexx .bx .right_hidden .around li {
+  padding: 10px 50px 10px 50px;
+  border-radius: 20px;
+  transition: all 0.3s linear;
+}
+.container .head .navbar .burger .flexx .bx .right_hidden .around li:hover {
+  transform: scale(1.1);
+  background-color: #34c759;
+}
+.container .head .navbar .burger .flexx .bx .right_hidden .around li:hover a {
+  color: #000;
+}
+.container .head .navbar .burger .flexx .bx .right_hidden .around li a {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 90px;
+  /* identical to box height, or 643% */
+  color: #fff;
+}
+.container .head .navbar .right {
+  width: 303px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .head .navbar .right ul {
+  width: 303px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .head .navbar .right a {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 90px;
+  /* identical to box height, or 643% */
+  color: #fff;
+  transition: all 0.3s linear;
+}
+.container .head .navbar .right a:hover {
+  color: #34c759;
+}
+.container .head .text_head {
+  width: 100%;
+  height: 100%;
+}
+.container .head .text_head .text_top {
+  width: 100%;
+  height: 373px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .head .text_head .text_top h1 {
+  font-family: "Helvetica Neue";
+  font-size: 72px;
+  line-height: 74px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.container .head .text_head .text_top p {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: -0.2px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+.container .head .text_head .text_button {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .head .text_head .text_button button {
+  width: 220px;
+  height: 72px;
+  background: #34c759;
+  border-radius: 43px;
+  border: transparent;
+  transition: all 0.3s linear;
+}
+.container .head .text_head .text_button button a {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.2em;
+  /* Black */
+  color: #1a1a1a;
+}
+.container .head .text_head .text_button button:hover {
+  box-shadow: 0px 0px 5px 5px rgba(52, 199, 89, 0.16);
+  transform: scale(1.1);
+}
+.container .head .text_head .text_bot {
+  width: 80%;
+  margin-left: 10%;
+  height: 285px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .head .text_head .text_bot .card {
+  width: 245px;
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .head .text_head .text_bot .card h2 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  /* identical to box height, or 188% */
+  text-align: center;
+  color: #ffffff;
+}
+.container .head .text_head .text_bot .card p {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 10px;
+  /* or 429% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.container .basic {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#1a1a1a, #191919);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .basic .basic_card {
+  position: absolute;
+  top: 110%;
+  width: 1110px;
+  height: 736px;
+  background-color: #252525;
+  border-radius: 20px;
+}
+.container .basic .basic_card .theme {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .basic .basic_card .theme h2 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 0px;
+  /* identical to box height, or 150% */
+  padding-top: 50px;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.container .basic .basic_card .theme h3 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 10px;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.2em;
+  color: #d9d9d9;
+}
+.container .basic .basic_card .theme p {
+  padding-top: 50px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* or 188% */
+  text-align: center;
+  color: #a6a6a6;
+}
+.container .basic .basic_card .about {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .basic .basic_card .about button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #1a1a1a;
+  transition: all 0.3s linear;
+}
+.container .basic .basic_card .about button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 1px 2px rgba(52, 199, 89, 0.55);
+}
+.container .small {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #191919;
+}
+.container .small .stop {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container .small .stop::before {
+  content: " ";
+  bottom: 70px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid #34c759;
+}
+.container .small .stop .work h2 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 5px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.container .small .stop .work h3 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 0px;
+  /* identical to box height, or 250% */
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: capitalize;
+  color: #d9d9d9;
+}
+.container .small .sbot {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+.container .small .sbot .box {
+  width: 255px;
+  height: 206px;
+  background-color: #252525;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+}
+.container .small .sbot .box:hover {
+  background-color: #34c759;
+}
+.container .small .sbot .box:hover .btop::before {
+  border-top: 2px solid #191919;
+}
+.container .small .sbot .box:hover .btop h1 {
+  color: #191919;
+}
+.container .small .sbot .box:hover .bbot p {
+  color: #191919;
+}
+.container .small .sbot .box .btop {
+  width: 207;
+  height: 32px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.container .small .sbot .box .btop h1 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: -0.275px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.container .small .sbot .box .btop::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 40px;
+  border-top: 2px solid #34c759;
+}
+.container .small .sbot .box .bbot {
+  width: 200px;
+  height: 72px;
+  position: absolute;
+  top: 90px;
+  left: 30px;
+}
+.container .small .sbot .box .bbot p {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  /* or 138% */
+  letter-spacing: -0.1625px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.container .food {
+  width: 100%;
+  height: 1286px;
+  background-color: #191919;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .food .ftop {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .food .ftop .stop {
+  padding-top: 30px;
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container .food .ftop .stop::before {
+  content: " ";
+  bottom: 50px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid #34c759;
+}
+.container .food .ftop .stop .work h2 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 5px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.container .food .ftop .stop .work h3 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 0px;
+  /* identical to box height, or 250% */
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: capitalize;
+  color: #d9d9d9;
+}
+.container .food .fcenter {
+  width: 100%;
+  flex-wrap: wrap;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+.container .food .fcenter .fbox {
+  width: 350px;
+  height: 493px;
+  background-color: #252525;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+.container .food .fcenter .fbox:hover {
+  transform: scale(1.1);
+}
+.container .food .fcenter .fbox:nth-child(2) .ff_top {
+  width: 100%;
+  height: 260px;
+  background-image: url(/img/placeholder\ dish\ 2.png);
+}
+.container .food .fcenter .fbox:nth-child(3) .ff_top {
+  width: 100%;
+  height: 260px;
+  background-image: url(/img/placeholder\ dish\ 3.png);
+}
+.container .food .fcenter .fbox .ff_top {
+  width: 100%;
+  height: 260px;
+  background-image: url(/img/placeholder\ dish.png);
+}
+.container .food .fcenter .fbox .ff_center {
+  width: 100%;
+  height: 146px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .food .fcenter .fbox .ff_center h2 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 30px;
+  padding-top: 20px;
+  padding-right: 120px;
+  color: #d9d9d9;
+}
+.container .food .fcenter .fbox .ff_center h5 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  padding-right: 150px;
+  letter-spacing: -0.15px;
+  color: #a4a8b2;
+}
+.container .food .fcenter .fbox .ff_center p {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  padding-top: 30px;
+  padding-right: 55px;
+  letter-spacing: -0.1625px;
+  color: #85878c;
+}
+.container .food .fcenter .fbox .ff_bot {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.container .food .fcenter .fbox .ff_bot img {
+  width: 155px;
+  height: 30px;
+}
+.container .food .fcenter .fbox .ff_bot button {
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #262626;
+  font-family: "Helvetica Neue";
+  border-color: #303030;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 10px;
+  line-height: 35px;
+  /* identical to box height, or 400% */
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+}
+.container .food .fcenter .fbox .ff_bot button:hover {
+  background-color: #34c759;
+  color: #252525;
+}
+.container .food .fbot {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  margin-top: 10px;
+}
+.container .food .fbot .fbox {
+  width: 350px;
+  height: 493px;
+  background-color: #252525;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+.container .food .fbot .fbox:hover {
+  transform: scale(1.1);
+}
+.container .food .fbot .fbox:nth-child(1) .ff_top {
+  width: 100%;
+  height: 260px;
+  background-image: url(/img/placeholder2.png);
+}
+.container .food .fbot .fbox:nth-child(2) .ff_top {
+  width: 100%;
+  height: 260px;
+  background-image: url(/img/placeholder\ dish\ 5.png);
+}
+.container .food .fbot .fbox:nth-child(3) .ff_top {
+  width: 100%;
+  height: 260px;
+  background-image: url(/img/placeholder\ dish\ 6.png);
+}
+.container .food .fbot .fbox .ff_top {
+  width: 100%;
+  height: 260px;
+  background-image: url(/img/placeholder\ dish.png);
+}
+.container .food .fbot .fbox .ff_top img {
+  width: 100%;
+}
+.container .food .fbot .fbox .ff_center {
+  width: 100%;
+  height: 146px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .food .fbot .fbox .ff_center h2 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 30px;
+  padding-top: 20px;
+  padding-right: 120px;
+  color: #d9d9d9;
+}
+.container .food .fbot .fbox .ff_center h5 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  padding-right: 150px;
+  letter-spacing: -0.15px;
+  color: #a4a8b2;
+}
+.container .food .fbot .fbox .ff_center p {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  padding-top: 30px;
+  padding-right: 55px;
+  letter-spacing: -0.1625px;
+  color: #85878c;
+}
+.container .food .fbot .fbox .ff_bot {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.container .food .fbot .fbox .ff_bot img {
+  width: 155px;
+  height: 30px;
+}
+.container .food .fbot .fbox .ff_bot button {
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #262626;
+  font-family: "Helvetica Neue";
+  border-color: #303030;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 10px;
+  line-height: 35px;
+  /* identical to box height, or 400% */
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+}
+.container .food .fbot .fbox .ff_bot button:hover {
+  background-color: #34c759;
+  color: #252525;
+}
+.container .review {
+  width: 100%;
+  height: 600px;
+  background-color: #191919;
+}
+.container .review .rtop {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .review .rtop .stop {
+  padding-top: 150px;
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container .review .rtop .stop::before {
+  content: " ";
+  bottom: 30px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-bottom: 1px solid #34c759;
+}
+.container .review .rtop .stop .work h2 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 5px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.container .review .rtop .stop .work h3 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 0px;
+  /* identical to box height, or 250% */
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: capitalize;
+  color: #d9d9d9;
+}
+.container .review .rbot {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.container .review .rbot .people {
+  width: 350px;
+  height: 100%;
+}
+.container .review .rbot .people .pp_top {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .review .rbot .people .pp_top .rasm {
+  width: 65px;
+  height: 65px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/img/Avatar.png);
+  border-radius: 50%;
+}
+.container .review .rbot .people .pp_top .ptext {
+  width: 290px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .review .rbot .people .pp_top .ptext h2 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.225px;
+  color: #ffffff;
+}
+.container .review .rbot .people .pp_top .ptext h3 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  padding-top: 10px;
+  padding-right: 30px;
+  letter-spacing: -0.15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.container .review .rbot .people .pp_bot {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20px;
+}
+.container .review .rbot .people .pp_bot .pic:nth-child(1) {
+  width: 160px;
+  height: 100%;
+}
+.container .review .rbot .people .pp_bot .pic:nth-child(1) img {
+  width: 100%;
+}
+.container .review .rbot .people .pp_bot .pic:nth-child(2) {
+  width: 65px;
+  height: 100%;
+}
+.container .review .rbot .people .pp_bot .pic:nth-child(2) img {
+  width: 100%;
+}
+.container .review .rbot .people .pp_bot .pic:nth-child(3) {
+  width: 65px;
+  height: 100%;
+}
+.container .review .rbot .people .pp_bot .pic:nth-child(3) img {
+  width: 100%;
+}
+.container .recipe {
+  width: 100%;
+  height: 120%;
+  background-color: #191919;
+}
+.container .recipe .rec_top {
+  width: 100%;
+  height: 240px;
+}
+.container .recipe .rec_top .stop {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container .recipe .rec_top .stop::before {
+  content: " ";
+  bottom: 70px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid #34c759;
+}
+.container .recipe .rec_top .stop .work h2 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 5px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.container .recipe .rec_top .stop .work h3 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 0px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: capitalize;
+  color: #d9d9d9;
+}
+.container .recipe .rec_bot {
+  width: 100%;
+  height: 510px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.container .recipe .rec_bot .rr_left {
+  width: 540px;
+  height: 510px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/img/placeholder\ rec.png);
+  border-radius: 10px;
+}
+.container .recipe .rec_bot .rr_left .rl_top {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.container .recipe .rec_bot .rr_left .rl_top button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: all 0.3s linear;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.container .recipe .rec_bot .rr_left .rl_top button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 1px #34c759;
+}
+.container .recipe .rec_bot .rr_left .rl_center {
+  width: 359px;
+  height: 300px;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.container .recipe .rec_bot .rr_left .rl_center button {
+  width: 89px;
+  height: 25px;
+  background-color: #322f3d;
+  color: #fff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 10px;
+  transition: all 0.3s linear;
+}
+.container .recipe .rec_bot .rr_left .rl_center button:hover {
+  transform: scale(1.1);
+  background-color: #34c759;
+  color: #fff;
+}
+.container .recipe .rec_bot .rr_left .rl_center h3 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  /* identical to box height, or 214% */
+  padding-top: 65px;
+  color: #ffffff;
+}
+.container .recipe .rec_bot .rr_left .rl_center h2 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  /* or 167% */
+  padding-top: 25px;
+  padding-bottom: 45px;
+  text-align: center;
+  color: #ffffff;
+}
+.container .recipe .rec_bot .rr_left .rl_center p {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  /* identical to box height, or 214% */
+  color: #ffffff;
+}
+.container .recipe .rec_bot .rr_left .rl_bot {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  margin-left: 20px;
+  padding-top: 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.container .recipe .rec_bot .rr_right {
+  width: 580px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.container .recipe .rec_bot .rr_right .lorem {
+  width: 540px;
+  height: 150px;
+  border: 1px solid;
+  background-color: #252525;
+  border-radius: 10px;
+}
+.container .recipe .rec_bot .rr_right .lorem .lor_top {
+  width: 505px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  text-align: start;
+}
+.container .recipe .rec_bot .rr_right .lorem .lor_top h2 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* or 188% */
+  color: #ffffff;
+  padding-top: 20px;
+}
+.container .recipe .rec_bot .rr_right .lorem .lor_bot {
+  width: 505px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 165px;
+}
+.container .recipe .rec_bot .rr_right .lorem .lor_bot .bot_left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container .recipe .rec_bot .rr_right .lorem .lor_bot .bot_left button {
+  width: 65px;
+  height: 25px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 10px;
+  line-height: 20px;
+  /* identical to box height, or 250% */
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.container .recipe .rec_bot .rr_right .lorem .lor_bot .bot_left p {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
+  /* identical to box height, or 208% */
+  color: #b3b3b3;
+}
+.container .recipe .rec_bot .rr_right .lorem:nth-child(2) {
+  background-image: url(/img/image\ rec.png);
+}
+.container .social {
+  width: 100%;
+  height: 600px;
+  background-color: #191919;
+}
+.container .social .ss_top {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .social .ss_top .stop {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container .social .ss_top .stop::before {
+  content: " ";
+  bottom: 70px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid #34c759;
+}
+.container .social .ss_top .stop .work h2 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 5px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.container .social .ss_top .stop .work h3 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 0px;
+  /* identical to box height, or 250% */
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: capitalize;
+  color: #d9d9d9;
+}
+.container .social .ss_bot {
+  width: 100%;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.container .social .ss_bot .network {
+  width: 350px;
+  height: 100%;
+  background-color: #303030;
+  border-radius: 10px;
+}
+.container .social .ss_bot .network:nth-child(2) .nn_bot {
+  display: none;
+}
+.container .social .ss_bot .network:nth-child(2) .nn_bot2 {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+.container .social .ss_bot .network:nth-child(2) .nn_bot2 .inst {
+  width: 114px;
+  height: 120px;
+  border-radius: 10px;
+}
+.container .social .ss_bot .network:nth-child(2) .nn_bot2 .inst img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+.container .social .ss_bot .network:nth-child(2) .nn_bot2 .inst img:hover {
+  transform: scale(1.1);
+}
+.container .social .ss_bot .network:nth-child(3) .nn_bot h2 {
+  display: none;
+}
+.container .social .ss_bot .network .nn_top {
+  width: 100%;
+  height: 85px;
+  border-bottom: 1px solid #737373;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.container .social .ss_bot .network .nn_top .nnt_left {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #737373;
+}
+.container .social .ss_bot .network .nn_top .nnt_right {
+  width: 270px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .social .ss_bot .network .nn_top .nnt_right h3 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  /* identical to box height, or 214% */
+  color: #bfbfbf;
+}
+.container .social .ss_bot .network .nn_top .nnt_right button {
+  width: 100px;
+  height: 40px;
+  border-radius: 18px;
+  background-color: transparent;
+  border-color: #737373;
+  transition: all 0.3s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .social .ss_bot .network .nn_top .nnt_right button:hover {
+  background-color: #34c759;
+  transform: scale(1.1);
+}
+.container .social .ss_bot .network .nn_top .nnt_right button a {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 10px;
+  /* identical to box height, or 400% */
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #737373;
+}
+.container .social .ss_bot .network .nn_bot {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+  justify-content: center;
+  gap: 20px;
+}
+.container .social .ss_bot .network .nn_bot p {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  /* identical to box height, or 214% */
+  color: #737373;
+}
+.container .social .ss_bot .network .nn_bot h3 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  /* or 214% */
+  color: rgba(255, 255, 255, 0.7);
+}
+.container .social .ss_bot .network .nn_bot h2 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  /* identical to box height, or 214% */
+  /* Primary */
+  color: #34c759;
+}
+.container .footer {
+  overflow-x: hidden;
+  width: 100%;
+  height: 275px;
+  background-color: #303030;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .footer .fr_top {
+  width: 1110px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 110px;
+}
+.container .footer .fr_top .text_bot {
+  width: 80%;
+  margin-left: 10%;
+  height: 285px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .footer .fr_top .text_bot .card {
+  width: 245px;
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .footer .fr_top .text_bot .card h2 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  /* identical to box height, or 188% */
+  text-align: center;
+  color: #ffffff;
+}
+.container .footer .fr_top .text_bot .card p {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 10px;
+  /* or 429% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.container .footer .fr_bot {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #737373;
+}
+.container .footer .fr_bot .left {
+  width: 200px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.container .footer .fr_bot .left h2 {
+  font-size: 16px;
+  padding-top: 10px;
+  color: #34c759;
+}
+.container .footer .fr_bot h2 {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 60px;
+  /* or 500% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #737373;
+}
