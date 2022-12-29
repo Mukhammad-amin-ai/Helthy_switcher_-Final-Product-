@@ -521,17 +521,17 @@
 .container .food .fcenter .fbox:nth-child(2) .ff_top {
   width: 100%;
   height: 260px;
-  background-image: url(/img/placeholder\ dish\ 2.png);
+  background-image: url('/img/placeholder\ dish\ 2.png');
 }
 .container .food .fcenter .fbox:nth-child(3) .ff_top {
   width: 100%;
   height: 260px;
-  background-image: url(/img/placeholder\ dish\ 3.png);
+  background-image: url('/img/placeholder\ dish\ 3.png');
 }
 .container .food .fcenter .fbox .ff_top {
   width: 100%;
   height: 260px;
-  background-image: url(/img/placeholder\ dish.png);
+  background-image: url('/img/placeholder\ dish.png');
 }
 .container .food .fcenter .fbox .ff_center {
   width: 100%;
@@ -626,22 +626,22 @@
 .container .food .fbot .fbox:nth-child(1) .ff_top {
   width: 100%;
   height: 260px;
-  background-image: url(/img/placeholder2.png);
+  background-image: url('/img/placeholder2.png');
 }
 .container .food .fbot .fbox:nth-child(2) .ff_top {
   width: 100%;
   height: 260px;
-  background-image: url(/img/placeholder\ dish\ 5.png);
+  background-image: url('/img/placeholder\ dish\ 5.png');
 }
 .container .food .fbot .fbox:nth-child(3) .ff_top {
   width: 100%;
   height: 260px;
-  background-image: url(/img/placeholder\ dish\ 6.png);
+  background-image: url('/img/placeholder\ dish\ 6.png');
 }
 .container .food .fbot .fbox .ff_top {
   width: 100%;
   height: 260px;
-  background-image: url(/img/placeholder\ dish.png);
+  background-image: url('/img/placeholder\ dish.png');
 }
 .container .food .fbot .fbox .ff_top img {
   width: 100%;
@@ -794,7 +794,7 @@
   height: 65px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/img/Avatar.png);
+  background-image: url('/img/Avatar.png');
   border-radius: 50%;
 }
 .container .review .rbot .people .pp_top .ptext {
@@ -913,7 +913,7 @@
   height: 510px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/img/placeholder\ rec.png);
+  background-image: url('/img/placeholder\ rec.png');
   border-radius: 10px;
 }
 .container .recipe .rec_bot .rr_left .rl_top {
@@ -1073,7 +1073,7 @@
   color: #b3b3b3;
 }
 .container .recipe .rec_bot .rr_right .lorem:nth-child(2) {
-  background-image: url(./img/image\ rec.png);
+  background-image: url('./img/image\ rec.png');
 }
 .container .social {
   width: 100%;
