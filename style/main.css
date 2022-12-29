@@ -521,12 +521,12 @@
 .container .food .fcenter .fbox:nth-child(2) .ff_top {
   width: 100%;
   height: 260px;
-  background-image: url('/img/placeholder\ dish\ 2.png');
+  background-image: url('./img/placeholder\ dish\ 2.png');
 }
 .container .food .fcenter .fbox:nth-child(3) .ff_top {
   width: 100%;
   height: 260px;
-  background-image: url('/img/placeholder\ dish\ 3.png');
+  background-image: url('./img/placeholder\ dish\ 3.png');
 }
 .container .food .fcenter .fbox .ff_top {
   width: 100%;
